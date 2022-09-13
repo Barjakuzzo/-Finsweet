@@ -1,0 +1,34 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 1440px; 
+  padding-left: 80px;
+  padding-right: 80px;
+  margin: auto;
+}
+.header {
+  background: #232536;
+}
+
+.header-menu-link {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.header-button {
+  padding: 16px 48px;
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #232536;
+}
