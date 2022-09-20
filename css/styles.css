@@ -70,6 +70,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   color: #232536;
+  margin-left: 32px;
 }
 
 .main-page-h3 {
@@ -94,12 +95,12 @@ body {
 }
 
 .main-page-datetime {
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 28px;
-color: #FFFFFF;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FFFFFF;
 }
 
 .main-page-p {
@@ -298,9 +299,6 @@ color: #232536;
   color: #6D6E76;
 }
 
-.choose-catagory {
-}
-
 .choose-catagory-h2 {
   font-family: 'Sen';
   font-style: normal;
@@ -309,6 +307,17 @@ color: #232536;
   line-height: 48px;
   letter-spacing: 2px;
   color: #232536;
+}
+
+.choose-catagory-li {
+  width: 296px;
+  height: 228px;
+  background: #F4F4F4;
+  margin-right: 32px;
+}
+
+.choose-catagory-li:hover {
+  background: #EDC14A;
 }
 
 .choose-catagory-h3 {
@@ -388,6 +397,13 @@ color: #232536;
   color: #6D6E76;
 }
 
+.list-authors-li {
+  width: 296px;
+  height: 324px;
+  background: #F4F4F4;
+  margin-right: 32px;
+}
+
 .start-button {
   padding: 16px 48px;
   font-family: 'Sen';
@@ -420,6 +436,13 @@ color: #232536;
   line-height: 20px;
   color: #6D6E76;
   opacity: 0.6;
+}
+
+.featured-in-li {
+  width: 160px;
+  height: 32px;
+  margin-right: 75px;
+  margin-left: 85px;
 }
 
 .testimonials-h2 {
@@ -553,10 +576,11 @@ border-radius: 16px;
 
 footer-menu {
   margin-left: 700px;
+  margin-top: 60px;
+
 }
 /*
 .footer-menu-list {
-
 }
 */
 .footer-menu-item:not(:first-child) {
@@ -578,6 +602,7 @@ footer-menu {
   background: #6D6E76;
   width: 1280px;
   height: 256px;
+  margin-top: 55px;
 }
 
 .footer-form-h2 {
@@ -621,4 +646,8 @@ footer-menu {
   line-height: 28px;
   color: #FFFFFF;
   opacity: 0.7;
+}
+
+li {
+  float: left;
 }
