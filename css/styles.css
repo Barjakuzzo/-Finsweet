@@ -613,3 +613,12 @@ footer-menu {
   background: #EDC14A;
 }
 
+.footer-adress {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
