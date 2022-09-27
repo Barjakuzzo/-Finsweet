@@ -15,40 +15,35 @@
 }
 */
 
-
-
 body {
   background: #FFFFFF;
 }
 
-
-
 .container {
   width: 1440px;
-  overflow: auto;
   margin: 0 auto;
   padding-left: 80px;
   padding-right: 80px;
 }
 
-
+/*--Header--*/
 
 .header {
   background: #232536;
 }
 
 .header-logo {
-  padding: 25px 0px;
+  margin: 25px 620px 25px 0px;
 }
 
 .header-menu {
-  margin-left: 620px;
+  margin: 25px 0px 25px 620px;
 }
-/*
-.header-menu-list {
 
+.header-menu a:hover {
+  border-bottom: 1px solid orange;
 }
-*/
+
 .header-menu-item:not(:first-child) {
   margin-left: 25px;
 }
@@ -60,6 +55,8 @@ body {
   font-size: 16px;
   line-height: 28px;
   color: #FFFFFF;
+  text-decoration: none;
+  float: left;
 }
 
 .header-button {
@@ -70,7 +67,14 @@ body {
   font-size: 18px;
   line-height: 24px;
   color: #232536;
-  margin-left: 32px;
+  margin: 25px 0px 25px 32px;
+}
+
+/*--Main--*/
+
+.main-page {
+  background-image: url(../image/man-in-black-suit-wearing-eye-glasses-sitting-on-gray-sofa-using-macbook.jpg);
+  height: 720px;
 }
 
 .main-page-h3 {
@@ -82,6 +86,7 @@ body {
   letter-spacing: 3px;
   text-transform: uppercase;
   color: #FFFFFF;
+  padding-top: 128px;
 }
 
 .main-page-h1 {
@@ -92,6 +97,7 @@ body {
   line-height: 64px;
   letter-spacing: 2px;
   color: #FFFFFF;
+  margin-top: 24px;
 }
 
 .main-page-datetime {
@@ -101,6 +107,7 @@ body {
   font-size: 16px;
   line-height: 28px;
   color: #FFFFFF;
+  margin-top: 24px;
 }
 
 .main-page-p {
@@ -110,6 +117,7 @@ body {
   font-size: 16px;
   line-height: 28px;
   color: #FFFFFF;
+  margin-top: 16px;
 }
 
 .main-page-button {
@@ -122,11 +130,14 @@ body {
   color: #232536;
   background-color: #FFD050;
   border: none;
+  margin-top: 48px;
 }
 
 .main-page-button:hover {
   background: #EDC14A;
 }
+
+/*--Featured Post--*/
 
 .featured-post {
   font-family: 'Sen';
@@ -136,15 +147,7 @@ body {
   line-height: 48px;
   letter-spacing: 2px;
   color: #232536;
-}
-
-.featured-post-datetime {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-  color: #4C4C4C;
+  max-width: 733px;
 }
 
 .featured-post-h2 {
@@ -155,6 +158,30 @@ body {
   line-height: 48px;
   letter-spacing: 2px;
   color: #232536;
+  margin-bottom: 32px;
+}
+
+.featured-post-block {
+  border-width: 1px;
+  border-style: double;
+  border-color: grey;
+}
+
+.featured-post-image {
+  margin: 32px;
+  width: 669px;
+  height: 352px;
+}
+
+.featured-post-datetime {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4C4C4C;
+  margin-left: 32px;
+  margin-bottom: 16px;
 }
 
 .featured-post-h3 {
@@ -165,6 +192,8 @@ body {
   line-height: 40px;
   letter-spacing: 1px;
   color: #232536;
+  margin-left: 32px;
+  margin-bottom: 16px;
 }
 
 .featured-post-p {
@@ -174,6 +203,8 @@ body {
   font-size: 16px;
   line-height: 28px;
   color: #6D6E76;
+  margin-left: 32px;
+  margin-bottom: 32px;
 }
 
 .featured-post-button {
@@ -186,13 +217,22 @@ body {
   color: #232536;
   background-color: #FFD050;
   border: none;
+  margin-left: 32px;
+  margin-bottom: 32px;
 }
 
 .featured-post-button:hover {
   background: #EDC14A;
 }
 
-.all-posts-h2 {
+/*--All Posts--*/
+
+.all-post {
+  width: 517px;
+  height: 804px;
+}
+
+.all-post-h2 {
   font-family: 'Sen';
   font-style: normal;
   font-weight: 700;
@@ -200,15 +240,27 @@ body {
   line-height: 48px;
   letter-spacing: -2px;
   color: #232536;
+  margin-top: 32px;
 }
 
-.view-all-post {
+.all-post-view {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
   color: #592EA9;
+}
+
+.all-post-li{
+  text-decoration: none;
+  width: 517px;
+  height: 181px;
+  padding-left: 32px;
+}
+
+.all-post-li:hover {
+  background: #FBF6EA;
 }
 
 .all-post-datetime {
@@ -218,15 +270,30 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #592EA9;
+  padding-top: 32px;
+  margin-bottom: 8px;
 }
 
 .all-post-h4 {
-font-family: 'Sen';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 32px;
-color: #232536;
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #232536;
+  text-decoration: none;
+
+}
+
+/*--ABOUT US - Our mision--*/
+
+.about-mision {
+  background: #F4F0F8;
+  width: 1280px;
+  height: 500px;
+  padding-top: 96px;
+  padding-left: 80px;
+  margin-bottom: 128px;
 }
 
 .about-us-h2 {
@@ -238,6 +305,7 @@ color: #232536;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: #232536;
+  margin-bottom: 24px;
 }
 
 .about-us-h3 {
@@ -248,6 +316,7 @@ color: #232536;
   line-height: 48px;
   letter-spacing: 2px;
   color: #232536;
+  margin-bottom: 16px;
 }
 
 .about-us-p {
@@ -257,6 +326,7 @@ color: #232536;
   font-size: 16px;
   line-height: 28px;
   color: #6D6E76;
+  margin-bottom: 16px;
 }
 
 .about-us-link {
@@ -279,6 +349,7 @@ color: #232536;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: #232536;
+  margin-bottom: 24px;
 }
 
 .our-mision-h3 {
@@ -289,6 +360,7 @@ color: #232536;
   line-height: 40px;
   letter-spacing: 1px;
   color: #232536;
+  margin-bottom: 16px;
 }
 
 .our-mision-p {
@@ -299,6 +371,14 @@ color: #232536;
   color: #6D6E76;
 }
 
+/*--Choose A Catagory--*/
+
+.choose {
+  width: 1280px;
+  height: 324px;
+  margin-bottom: 128px;
+}
+
 .choose-catagory-h2 {
   font-family: 'Sen';
   font-style: normal;
@@ -307,42 +387,71 @@ color: #232536;
   line-height: 48px;
   letter-spacing: 2px;
   color: #232536;
+  text-align: center;
+  margin-bottom: 48px;
 }
 
 .choose-catagory-li {
   width: 296px;
   height: 228px;
   background: #F4F4F4;
-  margin-right: 32px;
+  border-width: 1px;
+  border-style: double;
+  border-color: grey;
+  float: left;
+}
+
+.choose-catagory-li:not(:first-child) {
+  margin-left: 33px;
 }
 
 .choose-catagory-li:hover {
-  background: #EDC14A;
+  background: #FFD050;
+}
+
+.choose-catagory-icon {
+  width: 48px;
+  height: 48px;
+  padding-top: 32px;
+  padding-left: 32px;
 }
 
 .choose-catagory-h3 {
   font-family: 'Sen';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 700px;
   font-size: 28px;
   line-height: 40px;
   letter-spacing: 1px;
   color: #232536;
+  padding-top: 15px;
+  padding-left: 32px;
 }
 
 .choose-catagory-p {
   font-family: 'Inter';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 400px;
   font-size: 16px;
   line-height: 28px;
   color: #6D6E76;
+  padding-top: 5px;
+  padding-left: 32px;
+}
+
+/*--Why we started--*/
+
+.start {
+  background-image: url(../image/close-up-photography-of-man-wearing-sunglasses.jpg);
+  width: 945px;
+  height: 705px;
+  margin-bottom: 112px;
 }
 
 .start-h2 {
   font-family: 'Inter';
   font-style: normal;
-  font-weight: 600;
+  font-weight: 600px;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 3px;
@@ -368,6 +477,15 @@ color: #232536;
   color: #6D6E76;
 }
 
+/*--List of Authors--*/
+
+.list-authors {
+  text-align: center;
+  width: 1280px;
+  height: 420px;
+  margin-bottom: 112px;
+}
+
 .list-authors-h2 {
   font-family: 'Sen';
   font-style: normal;
@@ -376,6 +494,31 @@ color: #232536;
   line-height: 48px;
   letter-spacing: 2px;
   color: #232536;
+  margin-bottom: 48px;
+}
+
+.list-authors-li {
+  width: 296px;
+  height: 324px;
+  background: #F4F4F4;
+  text-align: center;
+  background: #F4F4F4;
+  float: left;
+}
+
+.list-authors-li:not(:first-child) {
+  margin-left: 32px;
+}
+
+.list-authors-li:hover {
+  background: #FBF6EA;
+}
+
+.list-authors-image {
+  margin-top: 48px;
+  margin-bottom: 20px;
+  width: 128px;
+  height: 128px;
 }
 
 .list-authors-h3 {
@@ -386,6 +529,7 @@ color: #232536;
   line-height: 40px;
   letter-spacing: -1px;
   color: #232536;
+  text-align: center
 }
 
 .list-authors-p {
@@ -395,13 +539,13 @@ color: #232536;
   font-size: 14px;
   line-height: 20px;
   color: #6D6E76;
+  margin-bottom: 20px;
 }
 
-.list-authors-li {
-  width: 296px;
-  height: 324px;
-  background: #F4F4F4;
-  margin-right: 32px;
+.social-icons {
+  width: 112px;
+  height: 16px;
+  margin: 0 auto;
 }
 
 .start-button {
@@ -420,6 +564,14 @@ color: #232536;
   background: #EDC14A;
 }
 
+/*--We are Featured in--*/
+
+.featured {
+  width: 1237px;
+  height: 52px;
+  margin-bottom: 96px;
+}
+
 .featured-in-h2 {
   font-family: 'Sen';
   font-style: normal;
@@ -427,7 +579,10 @@ color: #232536;
   font-size: 24px;
   line-height: 32px;
   color: #6D6E76;
+  width: 136px;
+  height: 52px;
 }
+
 .featured-in-h2-1 {
   font-family: 'Inter';
   font-style: normal;
@@ -441,8 +596,15 @@ color: #232536;
 .featured-in-li {
   width: 160px;
   height: 32px;
-  margin-right: 75px;
-  margin-left: 85px;
+  float: left;
+}
+
+/*--TESTIMONIALS--*/
+
+.testimonials {
+  background: #FBF6EA;
+  max-width: 1280px;
+  margin-bottom: 128px;
 }
 
 .testimonials-h2 {
@@ -520,9 +682,16 @@ border-radius: 16px;
   background: #232536;
   width: 62px;
   height: 62px;
-  border-radius: 50px;
+  border-radius: 50%;
   border: none;
   padding: 32px 18px;
+}
+
+/*--Join our team to be a part of our story--*/
+
+.join {
+  text-align: center;
+  margin-bottom: 153px;
 }
 
 .join-h2 {
@@ -531,9 +700,9 @@ border-radius: 16px;
   font-weight: 700;
   font-size: 36px;
   line-height: 48px;
-  text-align: center;
   letter-spacing: -2px;
   color: #232536;
+  margin-bottom: 16px;
 }
 
 .join-p {
@@ -544,6 +713,7 @@ border-radius: 16px;
   line-height: 28px;
   text-align: center;
   color: #6D6E76;
+  margin-bottom: 32px;
 }
 
 .join-button {
@@ -562,7 +732,7 @@ border-radius: 16px;
   background: #EDC14A;
 }
 
-
+/*--Footer--*/
 
 .footer {
   background: #232536;
@@ -570,21 +740,22 @@ border-radius: 16px;
   padding-bottom: 60px;
 }
 
+.footer-head {
+}
+
 .footer-logo {
   padding: 60px 0px;
+  margin-top: 0px;
+  margin-left: 0px;
 }
 
-footer-menu {
-  margin-left: 700px;
-  margin-top: 60px;
+.footer-menu {
+  margin-top: 0px;
+  margin-right: 0px;
+}
 
-}
-/*
-.footer-menu-list {
-}
-*/
 .footer-menu-item:not(:first-child) {
-  margin-left: 25px;
+  margin-left: 24px;
 }
 
 .footer-menu-link {
@@ -596,13 +767,17 @@ footer-menu {
   display: flex;
   align-items: center;
   color: #FFFFFF;
+  float: left;
+  text-decoration: none;
 }
 
 .footer-form {
-  background: #6D6E76;
+  background: #FFFFFF;
   width: 1280px;
   height: 256px;
   margin-top: 55px;
+  /*background: #FFFFFF;
+  opacity: 0.05;*/
 }
 
 .footer-form-h2 {
@@ -615,6 +790,9 @@ footer-menu {
   align-items: center;
   letter-spacing: -2px;
   color: #FFFFFF;
+  margin: 80px 64px;
+  width: 562px;
+  height: 96px;
 }
 
 .footer-form-email {
@@ -646,8 +824,10 @@ footer-menu {
   line-height: 28px;
   color: #FFFFFF;
   opacity: 0.7;
+  text-decoration: none;
 }
 
+/*
 li {
   float: left;
-}
+}*/
