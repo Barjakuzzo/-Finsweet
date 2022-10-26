@@ -1,19 +1,3 @@
-/*
-.clearfix {
-  clear: both;
-}
-
-.text-center {
-  text-align: center;
-}
-. fl {
- float: left;
-}
-
-.fr {
-  float: right;
-}
-*/
 
 body {
   background: #FFFFFF;
@@ -32,17 +16,27 @@ body {
   background: #232536;
 }
 
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .header-logo {
-  margin: 25px 620px 25px 0px;
+  width: 140px;
+  height: 28px;
+  padding-top: 25px;
+  padding-bottom: 27px;
+  display: flex;
+  align-items: center;
+}
+.header-menu-flex {
+  display: flex;
+  align-items: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
-.header-menu {
-  margin: 25px 0px 25px 620px;
-}
-
-.header-menu a:hover {
-  border-bottom: 1px solid orange;
-}
 .header-menu-list {
   display: flex;
 }
@@ -59,6 +53,14 @@ body {
   line-height: 28px;
   color: #FFFFFF;
   text-decoration: none;
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
+.header-menu-link:hover,
+.header-menu-link:focus {
+  border-bottom: 1px solid orange;
+  color: orange;
 }
 
 .header-button {
@@ -69,17 +71,30 @@ body {
   font-size: 18px;
   line-height: 24px;
   color: #232536;
-  margin: 25px 0px 25px 32px;
+  width: 179px;
+  height: 56px;
+  margin-left: 32px;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  border: none;
 }
 
-/*--Main--*/
+/*--Hero--*/
 
-.main-page {
+.hero {
   background-image: url(../image/man-in-black-suit-wearing-eye-glasses-sitting-on-gray-sofa-using-macbook.jpg);
-  height: 720px;
+  margin-bottom: 128px;
+  min-height: 720px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
 }
 
-.main-page-h3 {
+.hero-page {
+}
+
+.hero-page-h3 {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
@@ -91,7 +106,7 @@ body {
   padding-top: 128px;
 }
 
-.main-page-h1 {
+.hero-page-h1 {
   font-family: 'Sen';
   font-style: normal;
   font-weight: 700;
@@ -102,7 +117,7 @@ body {
   margin-top: 24px;
 }
 
-.main-page-datetime {
+.hero-page-datetime {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -112,7 +127,7 @@ body {
   margin-top: 24px;
 }
 
-.main-page-p {
+.hero-page-p {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -122,7 +137,7 @@ body {
   margin-top: 16px;
 }
 
-.main-page-button {
+.hero-page-button {
   padding: 16px 48px;
   font-family: 'Sen';
   font-style: normal;
@@ -133,10 +148,22 @@ body {
   background-color: #FFD050;
   border: none;
   margin-top: 48px;
+  cursor: pointer;
 }
 
-.main-page-button:hover {
+.hero-page-button:hover {
   background: #EDC14A;
+}
+
+/*--Post--*/
+
+.post {
+  margin-bottom: 128px;
+}
+
+.post-flex {
+  display: flex;
+  width: 1280px;
 }
 
 /*--Featured Post--*/
@@ -167,10 +194,10 @@ body {
   border-width: 1px;
   border-style: double;
   border-color: grey;
+  padding: 32px;
 }
 
 .featured-post-image {
-  margin: 32px;
   width: 669px;
   height: 352px;
 }
@@ -182,7 +209,6 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #4C4C4C;
-  margin-left: 32px;
   margin-bottom: 16px;
 }
 
@@ -192,9 +218,8 @@ body {
   font-weight: 700;
   font-size: 28px;
   line-height: 40px;
-  letter-spacing: 1px;
+  letter-spacing: -1px;
   color: #232536;
-  margin-left: 32px;
   margin-bottom: 16px;
 }
 
@@ -205,8 +230,9 @@ body {
   font-size: 16px;
   line-height: 28px;
   color: #6D6E76;
-  margin-left: 32px;
+  width: 551px;
   margin-bottom: 32px;
+  letter-spacing: -0.1px;
 }
 
 .featured-post-button {
@@ -219,8 +245,6 @@ body {
   color: #232536;
   background-color: #FFD050;
   border: none;
-  margin-left: 32px;
-  margin-bottom: 32px;
 }
 
 .featured-post-button:hover {
@@ -231,9 +255,15 @@ body {
 
 .all-post {
   width: 517px;
-  height: 804px;
+  margin-left: 32px;
 }
 
+.all-post-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
 .all-post-h2 {
   font-family: 'Sen';
   font-style: normal;
@@ -242,7 +272,6 @@ body {
   line-height: 48px;
   letter-spacing: -2px;
   color: #232536;
-  margin-top: 32px;
 }
 
 .all-post-view {
@@ -256,9 +285,10 @@ body {
 
 .all-post-li{
   text-decoration: none;
-  width: 517px;
-  height: 181px;
   padding-left: 32px;
+  padding-right: 115px;
+  padding-top: 32px;
+  padding-bottom: 25px;
 }
 
 .all-post-li:hover {
@@ -272,7 +302,6 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #592EA9;
-  padding-top: 32px;
   margin-bottom: 8px;
 }
 
@@ -284,18 +313,31 @@ body {
   line-height: 32px;
   color: #232536;
   text-decoration: none;
-
 }
 
 /*--ABOUT US - Our mision--*/
 
+.about-mission-img {
+  display: block;
+  margin-left: 
+  auto;
+}
+
+.mission {
+  margin-bottom: 128px;
+}
+
 .about-mision {
   background: #F4F0F8;
-  width: 1280px;
-  height: 500px;
-  padding-top: 96px;
-  padding-left: 80px;
-  margin-bottom: 128px;
+
+  display: flex;
+}
+
+.about-us {
+  width: 515px;
+  margin-left: 80px;
+  margin-top: 96px;
+  margin-bottom: 96px;
 }
 
 .about-us-h2 {
@@ -316,7 +358,7 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 48px;
-  letter-spacing: 2px;
+  letter-spacing: -2px;
   color: #232536;
   margin-bottom: 16px;
 }
@@ -343,6 +385,14 @@ body {
 }
 
 /*--Our mision--*/
+
+.our-mision {
+  width: 516px;
+  margin-left: 61px;
+  margin-top: 98px;
+  margin-right: 108px;
+  margin-bottom: 153px;
+}
 
 .our-mision-h2 {
   font-family: 'Inter';
@@ -373,14 +423,21 @@ body {
   font-size: 16px;
   line-height: 28px;
   color: #6D6E76;
+  letter-spacing: 1px;
 }
 
 /*--Choose A Catagory--*/
 
 .choose {
-  width: 1280px;
-  height: 324px;
   margin-bottom: 128px;
+}
+
+.choose-catagory {
+  width: 1280px;
+}
+
+.choose-catagory-flex {
+  display: flex;
 }
 
 .choose-catagory-h2 {
@@ -402,7 +459,7 @@ body {
   border-width: 1px;
   border-style: double;
   border-color: grey;
-  float: left;
+  
 }
 
 .choose-catagory-li:not(:first-child) {
@@ -446,10 +503,20 @@ body {
 /*--Why we started--*/
 
 .start {
-  background-image: url(../image/close-up-photography-of-man-wearing-sunglasses.jpg);
-  width: 945px;
-  height: 705px;
+  width: 1280px;
   margin-bottom: 112px;
+}
+
+.start-img {
+  background-image: url(../image/close-up-photography-of-man-wearing-sunglasses.jpg);
+  width: 949px;
+  height: 705px;
+}
+
+.start-content {
+  width: 706px;
+  height: 584px;
+  background: white;
 }
 
 .start-h2 {
@@ -461,6 +528,9 @@ body {
   letter-spacing: 3px;
   text-transform: uppercase;
   color: #232536;
+  padding-top: 80px;
+  padding-left: 80px;
+  padding-bottom: 24px;
 }
 
 .start-h3 {
@@ -471,6 +541,9 @@ body {
   line-height: 64px;
   letter-spacing: -2px;
   color: #232536;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 16px;
 }
 
 .start-p {
@@ -479,6 +552,14 @@ body {
   font-size: 16px;
   line-height: 28px;
   color: #6D6E76;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 32px;
+}
+
+.start-button {
+  margin-left: 80px;
+  margin-bottom: 80px;
 }
 
 /*--List of Authors--*/
@@ -486,7 +567,6 @@ body {
 .list-authors {
   text-align: center;
   width: 1280px;
-  height: 420px;
   margin-bottom: 112px;
 }
 
@@ -575,9 +655,15 @@ body {
 /*--We are Featured in--*/
 
 .featured {
+  margin-bottom: 96px;
+}
+
+.featured-flex {
+  display: flex;
+  justify-content: center;
   width: 1237px;
   height: 52px;
-  margin-bottom: 96px;
+  margin-left: 14px;
 }
 
 .featured-in-h2 {
@@ -588,7 +674,9 @@ body {
   line-height: 32px;
   color: #6D6E76;
   width: 136px;
-  height: 52px;
+  border-width: 1px;
+  border-style:dashed;
+  border-color: #000000;
 }
 
 .featured-in-h2-1 {
@@ -603,6 +691,10 @@ body {
 
 .featured-in-list {
   display: flex;
+  justify-content: center;
+  width: 1015px;
+  height: 32px;
+  margin-left: 85px;
 }
 
 .featured-in-item {
@@ -610,12 +702,27 @@ body {
   height: 32px;
 }
 
+.featured-in-item:not(:first-child) {
+  margin-left: 75px;
+}
+
 /*--TESTIMONIALS--*/
 
 .testimonials {
-  background: #FBF6EA;
-  max-width: 1280px;
   margin-bottom: 128px;
+}
+
+.testimonials-0 {
+  background: #FBF6EA;
+  width: 1280px;
+  display: flex;
+}
+
+.testimonials-1 {
+  width: 349px;
+  padding-left: 112px;
+  padding-top: 92px;
+  padding-bottom: 172px;
 }
 
 .testimonials-h2 {
@@ -627,6 +734,8 @@ body {
   letter-spacing: 3px;
   text-transform: uppercase;
   color: #232536;
+  padding-bottom: 12px;
+
 }
 
 .testimonials-h3 {
@@ -637,6 +746,7 @@ body {
   line-height: 48px;
   letter-spacing: 2px;
   color: #232536;
+  padding-bottom: 16px;
 }
 
 .testimonials-p {
@@ -646,20 +756,40 @@ body {
   font-size: 16px;
   line-height: 28px;
   color: #232536;
+  padding-bottom: 16px;
 }
+
+.testimonials-line {
+  padding-left: 80px;
+  padding-top: 80px;
+}
+
 
 .testimonials-h4 {
-font-family: 'Sen';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 32px;
-color: #232536;
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #232536;
+  width: 470px;
+  padding-top: 80px;
+  padding-left: 96px;
+  padding-bottom: 121px;
 }
 
+.testimonials-flex {
+  display: flex;
+  width: 257px;
+  padding-left: 96px;
+}
+
+
 .testimonials-icon {
-background: url(image.png);
-border-radius: 16px;
+  background: url(image.png);
+  border-radius: 24px;
+  float: left;
+  margin-right: 16px;
 }
 
 .testimonials-name {
@@ -669,6 +799,7 @@ border-radius: 16px;
   font-size: 24px;
   line-height: 32px;
   color: #232536;
+  width: 193px;
 }
 
 .testimonials-location {
@@ -678,8 +809,13 @@ border-radius: 16px;
   font-size: 16px;
   line-height: 28px;
   color: #6D6E76;
+  width: 114px;
 }
 
+.testimonials-button {
+  display: flex;
+  margin-left: 141px;
+}
 .testimonials-button-back {
   background: #FFFFFF;
   width: 48px;
@@ -696,6 +832,7 @@ border-radius: 16px;
   border-radius: 50%;
   border: none;
   padding: 32px 18px;
+  margin-left: 24px;
 }
 
 /*--Join our team to be a part of our story--*/
@@ -703,6 +840,13 @@ border-radius: 16px;
 .join {
   text-align: center;
   margin-bottom: 153px;
+}
+
+.join-content {
+  width: 414px;
+  text-align: center;
+  margin: 0 auto;
+
 }
 
 .join-h2 {
@@ -747,22 +891,19 @@ border-radius: 16px;
 
 .footer {
   background: #232536;
-  padding-top: 60px;
-  padding-bottom: 60px;
+
 }
 
 .footer-head {
-}
-
-.footer-logo {
-  padding: 60px 0px;
-  margin-top: 0px;
-  margin-left: 0px;
+  display: flex;
+  width: 1280px;
+  padding-top: 58px;
+  margin-bottom: 58px;
 }
 
 .footer-menu {
-  margin-top: 0px;
-  margin-right: 0px;
+  margin-left: 700px;
+
 }
 
 .footer-menu-list {
@@ -782,17 +923,14 @@ border-radius: 16px;
   display: flex;
   align-items: center;
   color: #FFFFFF;
-  float: left;
   text-decoration: none;
 }
 
 .footer-form {
   background: #FFFFFF;
   width: 1280px;
-  height: 256px;
-  margin-top: 55px;
-  /*background: #FFFFFF;
-  opacity: 0.05;*/
+  opacity: 0.05;
+  display: flex;
 }
 
 .footer-form-h2 {
@@ -805,14 +943,20 @@ border-radius: 16px;
   align-items: center;
   letter-spacing: -2px;
   color: #FFFFFF;
-  margin: 80px 64px;
+  margin-left: 64px;
+  margin-top: 80px;
+  margin-bottom: 80px;
   width: 562px;
-  height: 96px;
 }
 
 .footer-form-email {
   width: 323px;
   height: 56px;
+  margin-left: 64px;
+  margin-top: 84px;
+  border-width: 1px;
+  border-style: double;
+  border-color: #6D6E76;
 }
 
 .footer-form-button {
@@ -825,6 +969,8 @@ border-radius: 16px;
   color: #232536;
   background-color: #FFD050;
   border: none;
+  margin-left: 24px;
+  margin-top: 84px;
 }
 
 .footer-form-button:hover {
@@ -841,8 +987,3 @@ border-radius: 16px;
   opacity: 0.7;
   text-decoration: none;
 }
-
-/* 
-li {
-  float: left;
-} */
